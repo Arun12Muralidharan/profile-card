@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Darkcyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: -72% 59%, 165% -33%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    height: max(300px, 55vh);
+    width: max(260px, 50vh);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.80rem;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.one{
+    width: 100%;
+    height: 35%;
+    background-image: url('./images/bg-pattern-card.svg');
+    border-top-left-radius: 0.80rem;
+    border-top-right-radius: 0.80rem;
+}
+
+.two{
+    width: 100%;
+    height: 44%;
+    text-align: center;
+    padding-top: 5.1rem;
+}
+
+.two h4{
+    font-size: 1.10rem;
+    display: inline-block;
+    color: var(--Verydarkdesaturatedblue);
+    font-weight: bolder;
+}
+
+.two h4 + p{
+    display: inline-block;
+    padding-left: 0.35rem;
+    color: var(--Darkgrayishblue);
+}
+
+.two .place{
+    color: var(--Darkgrayishblue);
+    padding-top: 0.55rem;
+    font-size: 0.85rem;
+}
+
+.three{
+    display: flex;
+    width: 100%;
+    height: 21%;
+    border-top: 1px solid var(--Darkgray);
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+
+section{
+    width: 33%;
+}
+
+section h4{
+    margin-bottom: 0.25rem;
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+section p{
+    color: var(--Darkgrayishblue);
+    font-size: 0.75rem;
+}
+
+.four{
+    position: absolute;
+    top: 23%;
+}
+
+.four img{
+    background-color: #fff;
+    padding: 0.25rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.attribution { 
+    position: absolute;
+    font-size: 11px; 
+    text-align: center; 
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max(250px, 20vw);
+    margin-top: 0.7rem;
+    color: #000;
+    backdrop-filter: blur(10%);
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: #000; 
+}
+
+.attribution p a{
+    color: hsl(123, 32%, 10%);
+}
